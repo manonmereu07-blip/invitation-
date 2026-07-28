@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Une mission pour Leny 🕷️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="web"></div>
+
+<div class="container">
+
+    <section id="intro" class="screen active">
+        <h1>Coucou Mini-Loup ❤️</h1>
+        <p>
+            Une mission spéciale t’attend...
+            <br>
+            Es-tu prêt à l’accepter ? 🕷️
+        </p>
+
+        <button onclick="startMission()">Commencer la mission</button>
+    </section>
+
+
+    <section id="mission" class="screen">
+
+        <h2>🕸️ Mission Spider-Man</h2>
+
+        <p>
+            Leny, j’ai besoin de ton aide pour une mission très importante...
+        </p>
+
+        <div class="card">
+
+            <h3>🎬 Destination</h3>
+
+            <p>
+                Une soirée cinéma pour découvrir :
+            </p>
+
+            <strong>
+                Spider-Man: Brand New Day 🕷️
+            </strong>
+
+            <p>
+                📍 Pathé Vaux-en-Velin
+            </p>
+
+        </div>
+
+
+        <h3>Choisis ton créneau :</h3>
+
+
+        <div class="choices">
+
+            <button onclick="chooseDate(this)">
+                Samedi 01/08<br>
+                20h00
+            </button>
+
+
+            <button onclick="chooseDate(this)">
+                Dimanche 02/08<br>
+                16h45
+            </button>
+
+
+            <button onclick="chooseDate(this)">
+                Dimanche 02/08<br>
+                20h00
+            </button>
+
+        </div>
+
+
+        <p class="question">
+            Alors Mini-Loup...
+            <br>
+            Tu acceptes cette mission ? ❤️
+        </p>
+
+
+        <div class="buttons">
+
+            <button class="yes" onclick="acceptMission()">
+                Oui ❤️
+            </button>
+
+
+            <button class="no" id="noButton" onmouseover="moveNoButton()">
+                Non 😏
+            </button>
+
+        </div>
+
+
+    </section>
+
+
+
+    <section id="final" class="screen">
+
+        <h1>Mission acceptée 🕷️❤️</h1>
+
+        <p>
+            Parfait Mini-Loup !
+            <br><br>
+            Prépare-toi pour notre soirée Spider-Man...
+            <br>
+            J’ai hâte de passer ce moment avec toi ❤️
+        </p>
+
+
+        <div class="hearts"></div>
+
+    </section>
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
